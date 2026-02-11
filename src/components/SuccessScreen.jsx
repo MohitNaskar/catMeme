@@ -1,17 +1,16 @@
-import { useEffect } from 'react'
-import Confetti from 'react-confetti'
-import './SuccessScreen.css'
-import celebrationImage from '../../_.jpeg'
-import Footer from './Footer'
+import { useEffect } from "react";
+import Confetti from "react-confetti";
+import "./SuccessScreen.css";
+import celebrationImage from "../../_.jpeg";
 
 function SuccessScreen() {
   useEffect(() => {
     // Play success animation
-    document.body.style.overflow = 'hidden'
+    document.body.style.overflow = "hidden";
     return () => {
-      document.body.style.overflow = 'auto'
-    }
-  }, [])
+      document.body.style.overflow = "auto";
+    };
+  }, []);
 
   return (
     <div className="success-screen">
@@ -20,9 +19,16 @@ function SuccessScreen() {
         height={window.innerHeight}
         recycle={true}
         numberOfPieces={200}
-        colors={['#667eea', '#764ba2', '#4facfe', '#00f2fe', '#a8edea', '#fed6e3']}
+        colors={[
+          "#667eea",
+          "#764ba2",
+          "#4facfe",
+          "#00f2fe",
+          "#a8edea",
+          "#fed6e3",
+        ]}
       />
-      
+
       <div className="success-content">
         <div className="success-hearts">
           <span className="success-heart heart-1">💙</span>
@@ -32,24 +38,23 @@ function SuccessScreen() {
           <span className="success-heart heart-5">💙</span>
         </div>
 
-        <h1 className="success-title">
-          Yay! I knew you'd say yes! 💙✨
-        </h1>
-        
+        <h1 className="success-title">Yay! I knew you'd say yes! 💙✨</h1>
+
         <div className="success-image-container">
-          <img 
-            src={celebrationImage} 
-            alt="Celebration" 
+          <img
+            src={celebrationImage}
+            alt="Celebration"
             className="success-image"
           />
           <div className="success-glow"></div>
         </div>
 
         <p className="success-message">
-          You've just made me the happiest person alive! 
+          You've just made me the happiest person alive!
           <br />
           <br />
-          I can't wait to spend Valentine's Day with you and create countless more beautiful memories together.
+          I can't wait to spend Valentine's Day with you and create countless
+          more beautiful memories together.
           <br />
           <br />
           Get ready for the best (virtual) date ever! 💫
@@ -76,9 +81,8 @@ function SuccessScreen() {
           ))}
         </div>
       </div>
-      <Footer />
     </div>
-  )
+  );
 }
 
-export default SuccessScreen
+export default SuccessScreen;

@@ -3,7 +3,6 @@ import Hero from './components/Hero'
 import Memories from './components/Memories'
 import Proposal from './components/Proposal'
 import SuccessScreen from './components/SuccessScreen'
-import Footer from './components/Footer'
 import './App.css'
 
 function App() {
@@ -22,7 +21,6 @@ function App() {
       <Hero />
       <Memories />
       <Proposal onYesClick={handleYesClick} />
-      <Footer />
     </div>
   )
 }
