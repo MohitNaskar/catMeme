@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Confetti from "react-confetti";
 import "./SuccessScreen.css";
 import celebrationImage from "../../_.jpeg";
+import Footer from "./Footer";
 
 function SuccessScreen() {
   useEffect(() => {
@@ -81,6 +82,7 @@ function SuccessScreen() {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
